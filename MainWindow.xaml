@@ -144,7 +144,7 @@
             <TextBox  x:Name="playerBank" Height="25" Canvas.Left="238" Canvas.Top="436" Text="bank amount" TextWrapping="Wrap" Width="93"/>
             <Label Content="Bet Amount" Height="29" Canvas.Left="376" Canvas.Top="402" Width="104"/>
             <TextBox x:Name="tableBet"   Height="29" Canvas.Left="480" Canvas.Top="402" Text="how much is being bet" TextWrapping="Wrap" Width="118"/>
-            <Button x:Name="betLess"   Content="Bet Less" Height="25" Canvas.Left="428" Canvas.Top="436" Width="66" />
+            <Button x:Name="betLess"   Content="Bet Less" Height="25" Canvas.Left="428" Canvas.Top="436" Width="66" Click="betLess_Click" />
             <Button x:Name="betMore"   Content="Bet More" Height="25" Canvas.Left="532" Canvas.Top="436" Width="66"/>
 
         </Canvas>

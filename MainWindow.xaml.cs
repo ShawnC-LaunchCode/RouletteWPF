@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
+
+
 namespace RouletteWPF
 {
     /// <summary>
@@ -63,9 +65,18 @@ namespace RouletteWPF
             text1.ScrollToEnd();
         }
 
+        private void betLess_Click(object sender, RoutedEventArgs e)
+        {
+            LogToText1("Bet Less Clicked");
+            
+            
+        }
+
+        
+
         //private void betLess(object sender, RoutedEventArgs e)
         //{
-            
+
         //}
     }
 }

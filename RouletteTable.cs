@@ -15,6 +15,7 @@ namespace RouletteWPF
             if (currentBank >= 5)
             {
                 this.CurrentBet -= 5;
+               
             }
             // else- you aint go no money fool. quit frontin-- no need to notify, they know.
         }
