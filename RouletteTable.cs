@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RouletteWPF
 {
-    class RouletteTable
+    public class RouletteTable
     {
         public int CurrentBet { get; set; }
 

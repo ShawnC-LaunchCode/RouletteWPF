@@ -17,6 +17,7 @@ using System.Runtime.CompilerServices;
 
 
 
+
 namespace RouletteWPF
 {
     /// <summary>
@@ -27,27 +28,21 @@ namespace RouletteWPF
         public MainWindow()
         {
             InitializeComponent();
-            
-
-            //create objects-models
-            Player currentPlayer = new Player("Scott");
-            var mainTable = new RouletteTable();
-            //
-
 
             //set initial values on view -- break out to function INIT
             text1.Text = currentPlayer.Name + " has entered the casino with $" + currentPlayer.Bank + ".";
             playerName.Text = currentPlayer.Name;
             playerBank.Text = currentPlayer.Bank.ToString();
-            
+
             mainTable.CurrentBet = 50;
             tableBet.Text = mainTable.CurrentBet.ToString();
             //
-            
-
-
-
         }
+
+        //create objects-models
+        Player currentPlayer = new Player("Scott");
+        RouletteTable mainTable = new RouletteTable();
+        //
 
         private void BetClick(object sender, RoutedEventArgs e)
         {
@@ -68,6 +63,7 @@ namespace RouletteWPF
         private void betLess_Click(object sender, RoutedEventArgs e)
         {
             LogToText1("Bet Less Clicked");
+            mainTable.betLess((int)currentPlayer.Bank); ;
             
             
         }
